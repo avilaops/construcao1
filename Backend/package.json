@@ -1,0 +1,22 @@
+{
+  "name": "marcos-construcao-backend",
+  "version": "1.0.0",
+  "description": "API REST para gestão completa de obras - Marcos Construção",
+  "main": "Program.cs",
+  "scripts": {
+    "dev": "dotnet watch run",
+    "build": "dotnet build",
+    "publish": "dotnet publish -c Release",
+    "ef-migration": "dotnet ef migrations add",
+    "ef-update": "dotnet ef database update"
+  },
+  "keywords": [
+    "construcao",
+    "obras",
+    "gestao",
+    "orcamentos",
+    "aspnet"
+  ],
+  "author": "Ávila Framework",
+  "license": "MIT"
+}

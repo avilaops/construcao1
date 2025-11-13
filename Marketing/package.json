@@ -1,0 +1,29 @@
+{
+  "name": "marcos-construcao-marketing",
+  "version": "1.0.0",
+  "description": "Automação de marketing - Email e WhatsApp para Marcos Construção",
+  "main": "marketing-automation.js",
+  "scripts": {
+    "teste": "node marketing-automation.js teste",
+    "relatorio": "node marketing-automation.js relatorio",
+    "campanha": "node campanha-exemplo.js",
+    "help": "node marketing-automation.js help"
+  },
+  "keywords": [
+    "marketing",
+    "email",
+    "whatsapp",
+    "automation",
+    "construcao"
+  ],
+  "author": "Ávila Framework",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^6.9.7",
+    "twilio": "^4.19.3",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0"
+  }
+}

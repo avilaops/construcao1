@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solução para Construtoras - Ávila</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            background-color: #f8fafc;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+            padding: 40px 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .section {
+            margin: 30px 0;
+        }
+
+        .section-title {
+            font-size: 20px;
+            color: #ea580c;
+            margin-bottom: 15px;
+            font-weight: 600;
+            border-left: 4px solid #ea580c;
+            padding-left: 15px;
+        }
+
+        .feature-list {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .feature-item {
+            padding: 12px 0;
+            color: #475569;
+            display: flex;
+            align-items: start;
+        }
+
+        .feature-item:not(:last-child) {
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .check {
+            color: #10b981;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+            border: 2px solid #10b981;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 25px 0;
+            text-align: center;
+        }
+
+        .highlight-box h3 {
+            color: #10b981;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .timeline {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .timeline-item {
+            padding: 15px 0;
+            color: #475569;
+        }
+
+        .timeline-day {
+            color: #ea580c;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .footer {
+            background: #1e293b;
+            color: #cbd5e1;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #ea580c;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏗️ Sistema para Construtoras</h1>
+            <p>Gestão completa do orçamento à entrega</p>
+        </div>
+
+        <div class="content">
+            <p style="font-size: 16px; color: #475569; margin-bottom: 25px;">
+                Olá!
+            </p>
+
+            <p style="font-size: 16px; color: #475569; margin-bottom: 25px;">
+                Como você manifestou interesse em soluções para construção,
+                preparei este material explicando nossa solução específica para construtoras.
+            </p>
+
+            <div class="section">
+                <h2 class="section-title">O problema que resolvemos</h2>
+
+                <p style="color: #475569; margin-bottom: 15px;">
+                    Sabemos que gerenciar obras é complexo:
+                </p>
+
+                <ul style="color: #64748b; line-height: 2; padding-left: 20px;">
+                    <li>Planilhas desorganizadas</li>
+                    <li>Dificuldade em controlar custos reais</li>
+                    <li>Perda de materiais e desperdício</li>
+                    <li>Falta de visibilidade do progresso</li>
+                    <li>Comunicação difícil com cliente e equipe</li>
+                    <li>Orçamentos que demoram horas para fazer</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Nossa solução</h2>
+
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <span class="check">✓</span>
+                        <div>
+                            <strong>Dashboard Executivo</strong><br>
+                            <span style="font-size: 14px; color: #64748b;">
+                                Veja todas as obras, progresso, gastos e margem em tempo real
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="check">✓</span>
+                        <div>
+                            <strong>Gestão Financeira</strong><br>
+                            <span style="font-size: 14px; color: #64748b;">
+                                Orçamentos automáticos, medições, controle de despesas
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="check">✓</span>
+                        <div>
+                            <strong>Controle de Equipe</strong><br>
+                            <span style="font-size: 14px; color: #64748b;">
+                                Presença, produtividade, pagamentos organizados
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="check">✓</span>
+                        <div>
+                            <strong>Gestão de Materiais</strong><br>
+                            <span style="font-size: 14px; color: #64748b;">
+                                Estoque, alertas automáticos, histórico de preços
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="check">✓</span>
+                        <div>
+                            <strong>App Mobile</strong><br>
+                            <span style="font-size: 14px; color: #64748b;">
+                                Funciona offline - você, equipe e cliente conectados
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="check">✓</span>
+                        <div>
+                            <strong>CRM & WhatsApp</strong><br>
+                            <span style="font-size: 14px; color: #64748b;">
+                                Gestão de leads, automação de orçamentos
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Resultado Real</h3>
+                <p style="color: #475569; font-size: 16px;">
+                    Economia média de <strong>R$ 24.700/mês</strong><br>
+                    através de melhor controle de materiais,<br>
+                    aumento de produtividade e redução de retrabalho
+                </p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Como funciona na prática</h2>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-day">1. Conversa Inicial (30 min)</div>
+                        <div style="font-size: 14px; color: #64748b; margin-top: 5px;">
+                            Entendemos seu processo atual e necessidades específicas
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-day">2. Demonstração (15 min)</div>
+                        <div style="font-size: 14px; color: #64748b; margin-top: 5px;">
+                            Mostramos o sistema funcionando com dados reais
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-day">3. Proposta Customizada</div>
+                        <div style="font-size: 14px; color: #64748b; margin-top: 5px;">
+                            Apresentamos solução adaptada + cronograma + valores
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-day">4. Implementação Rápida</div>
+                        <div style="font-size: 14px; color: #64748b; margin-top: 5px;">
+                            Sistema no ar em 24-48h + treinamento incluso
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Investimento</h2>
+
+                <p style="color: #475569; margin-bottom: 15px;">
+                    Trabalhamos com modelo flexível:
+                </p>
+
+                <div style="background: #f8fafc; padding: 20px; border-radius: 10px; margin: 15px 0;">
+                    <p style="color: #475569; margin-bottom: 10px;">
+                        <strong style="color: #ea580c;">Opção 1:</strong> Licença Mensal<br>
+                        <span style="font-size: 14px; color: #64748b;">
+                            A partir de R$ 497/mês - cancela quando quiser
+                        </span>
+                    </p>
+
+                    <p style="color: #475569; margin-top: 15px;">
+                        <strong style="color: #ea580c;">Opção 2:</strong> Desenvolvimento Customizado<br>
+                        <span style="font-size: 14px; color: #64748b;">
+                            Sistema 100% adaptado às suas necessidades
+                        </span>
+                    </p>
+                </div>
+
+                <p style="color: #64748b; font-size: 14px; margin-top: 15px;">
+                    * Valores finais dependem do escopo e número de usuários
+                </p>
+            </div>
+
+            <div
+                style="background: #eff6ff; border-left: 4px solid #3b82f6; padding: 20px; border-radius: 5px; margin: 30px 0;">
+                <p style="color: #1e40af; font-weight: 600; margin-bottom: 10px;">
+                    💡 Próximo passo
+                </p>
+                <p style="color: #475569; font-size: 15px;">
+                    Gostou? Vamos agendar uma <strong>demonstração rápida (15 min)</strong>
+                    para você ver o sistema funcionando.
+                </p>
+                <p style="color: #64748b; font-size: 14px; margin-top: 10px;">
+                    Sem compromisso. É só para ver se faz sentido para você.
+                </p>
+            </div>
+
+            <p style="text-align: center; color: #64748b; margin-top: 30px;">
+                Responda este email com sua disponibilidade<br>
+                ou me chame no WhatsApp para agendar
+            </p>
+        </div>
+
+        <div class="footer">
+            <p style="margin-bottom: 15px; font-size: 14px;">
+                <strong style="color: white;">Ávila</strong>
+            </p>
+
+            <p style="font-size: 14px; margin-bottom: 5px;">
+                📧 <a href="mailto:contato@httconstrucao1.avila.inc">contato@httconstrucao1.avila.inc</a>
+            </p>
+
+            <p style="font-size: 14px; margin-bottom: 5px;">
+                📱 <a href="https://wa.me/5517997811471">(17) 99164-2412</a>
+            </p>
+
+            <p style="font-size: 12px; color: #94a3b8; margin-top: 20px;">
+                © 2025 Ávila - Tecnologia que gera resultados
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
+

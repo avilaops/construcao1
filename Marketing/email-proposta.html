@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos Construção - Proposta Exclusiva</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.95;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 250px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250"><rect fill="%23fed7aa" width="800" height="250"/><path fill="%23ea580c" d="M0,150 Q200,100 400,150 T800,150 L800,250 L0,250 Z"/></svg>');
+            background-size: cover;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .greeting {
+            font-size: 18px;
+            color: #ea580c;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #ea580c;
+            font-size: 24px;
+            margin-bottom: 15px;
+            border-left: 4px solid #ea580c;
+            padding-left: 15px;
+        }
+
+        .benefits {
+            background-color: #fff7ed;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: start;
+            margin-bottom: 15px;
+        }
+
+        .benefit-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .benefit-icon {
+            background-color: #ea580c;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+            font-weight: bold;
+        }
+
+        .benefit-text {
+            flex: 1;
+            padding-top: 3px;
+        }
+
+        .price-box {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .price-original {
+            text-decoration: line-through;
+            color: #94a3b8;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .price-now {
+            font-size: 48px;
+            font-weight: 700;
+            color: #10b981;
+            margin: 15px 0;
+        }
+
+        .price-detail {
+            font-size: 14px;
+            color: #cbd5e1;
+            margin-top: 10px;
+        }
+
+        .roi-box {
+            background-color: #ecfdf5;
+            border: 2px solid #10b981;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .roi-title {
+            color: #10b981;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .roi-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #d1fae5;
+        }
+
+        .roi-item:last-child {
+            border-bottom: none;
+            font-weight: 700;
+            font-size: 18px;
+            color: #10b981;
+            padding-top: 15px;
+        }
+
+        .cta-button {
+            display: block;
+            background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+            color: white;
+            text-align: center;
+            padding: 20px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 30px 0;
+            box-shadow: 0 5px 20px rgba(234, 88, 12, 0.3);
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 7px 25px rgba(234, 88, 12, 0.4);
+        }
+
+        .urgency-banner {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+
+        .urgency-banner strong {
+            color: #ea580c;
+            font-size: 18px;
+        }
+
+        .timeline {
+            background-color: #f8fafc;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: start;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 19px;
+            top: 40px;
+            width: 2px;
+            height: calc(100% + 5px);
+            background-color: #e2e8f0;
+        }
+
+        .timeline-number {
+            background-color: #ea580c;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .timeline-content h4 {
+            color: #1e293b;
+            margin-bottom: 5px;
+        }
+
+        .timeline-content p {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        .guarantee-box {
+            background-color: #eff6ff;
+            border: 2px solid #3b82f6;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        .guarantee-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .guarantee-box h3 {
+            color: #3b82f6;
+            margin-bottom: 10px;
+        }
+
+        .social-proof {
+            background-color: #f8fafc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 25px 0;
+            font-style: italic;
+            border-left: 4px solid #10b981;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #ea580c;
+            margin-top: 10px;
+            font-style: normal;
+        }
+
+        .footer {
+            background-color: #1e293b;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #ea580c;
+        }
+
+        .footer-contact {
+            margin: 15px 0;
+            font-size: 14px;
+            color: #cbd5e1;
+        }
+
+        .footer-contact a {
+            color: #ea580c;
+            text-decoration: none;
+        }
+
+        .footer-disclaimer {
+            font-size: 12px;
+            color: #94a3b8;
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #10b981;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 10px 5px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .price-now {
+                font-size: 36px;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🏗️ MARCOS CONSTRUÇÃO</h1>
+            <p>Sistema Completo de Gestão de Obras</p>
+        </div>
+
+        <!-- Hero -->
+        <div class="hero-image"></div>
+
+        <!-- Content -->
+        <div class="content">
+            <p class="greeting">Olá Marcos e Sócio! 👋</p>
+
+            <p style="font-size: 16px; margin-bottom: 20px;">
+                Parabéns por fechar a casa de 350m²! Sabemos que vocês estão começando e que cada decisão conta.
+            </p>
+
+            <p style="font-size: 16px; margin-bottom: 30px;">
+                <strong>Preparamos algo especial:</strong> Um sistema completo que vai transformar como vocês gerenciam
+                obras - do orçamento à entrega.
+            </p>
+
+            <!-- Benefits -->
+            <div class="section">
+                <h2>✨ O que você ganha HOJE</h2>
+
+                <div class="benefits">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">1</div>
+                        <div class="benefit-text">
+                            <strong>Dashboard Executivo</strong><br>
+                            Visão completa de todas as obras em tempo real
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">2</div>
+                        <div class="benefit-text">
+                            <strong>Gestão Financeira</strong><br>
+                            Orçamentos, medições e margem de lucro automatizados
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">3</div>
+                        <div class="benefit-text">
+                            <strong>Controle de Equipe</strong><br>
+                            Presença, produtividade e pagamentos organizados
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">4</div>
+                        <div class="benefit-text">
+                            <strong>Estoque Inteligente</strong><br>
+                            Alertas automáticos quando material está acabando
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">5</div>
+                        <div class="benefit-text">
+                            <strong>App Mobile PWA</strong><br>
+                            Funciona offline - você, equipe e cliente conectados
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">6</div>
+                        <div class="benefit-text">
+                            <strong>WhatsApp Integrado</strong><br>
+                            Automação de orçamentos e follow-up de clientes
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROI -->
+            <div class="roi-box">
+                <div class="roi-title">💰 Economia Mensal Estimada</div>
+                <div class="roi-item">
+                    <span>Tempo em orçamentos (-15h)</span>
+                    <span><strong>R$ 1.500</strong></span>
+                </div>
+                <div class="roi-item">
+                    <span>Controle materiais (-8% perda)</span>
+                    <span><strong>R$ 3.200</strong></span>
+                </div>
+                <div class="roi-item">
+                    <span>Produtividade equipe (+12%)</span>
+                    <span><strong>R$ 5.000</strong></span>
+                </div>
+                <div class="roi-item">
+                    <span>Conversão leads (+1 obra/mês)</span>
+                    <span><strong>R$ 15.000</strong></span>
+                </div>
+                <div class="roi-item">
+                    <span>TOTAL MENSAL</span>
+                    <span><strong>R$ 24.700</strong></span>
+                </div>
+            </div>
+
+            <!-- Pricing -->
+            <div class="price-box">
+                <div>Valor Normal do Sistema</div>
+                <div class="price-original">R$ 54.400 (setup completo)</div>
+
+                <div style="margin: 20px 0; color: #10b981; font-size: 18px; font-weight: 600;">
+                    🎁 OFERTA CLIENTE FUNDADOR
+                </div>
+
+                <div class="price-now">R$ 0</div>
+                <div style="font-size: 20px; margin: 15px 0;">
+                    <strong>3 MESES GRÁTIS</strong>
+                </div>
+
+                <div class="price-detail">
+                    Depois: R$ 497/mês (cancela quando quiser)<br>
+                    <strong>ROI: 4.869% no primeiro ano!</strong>
+                </div>
+            </div>
+
+            <!-- Urgency -->
+            <div class="urgency-banner">
+                <strong>⏰ Oferta exclusiva válida até 20/11/2025</strong><br>
+                Apenas para os primeiros clientes em São José do Rio Preto
+            </div>
+
+            <!-- Timeline -->
+            <div class="section">
+                <h2>🚀 Deploy em 24 Horas</h2>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-number">1</div>
+                        <div class="timeline-content">
+                            <h4>Hoje 18h - Sistema no Ar</h4>
+                            <p>Deploy completo, configuração inicial, obra atual cadastrada</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-number">2</div>
+                        <div class="timeline-content">
+                            <h4>Amanhã 9h - Treinamento</h4>
+                            <p>2 horas hands-on com você e equipe</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-number">3</div>
+                        <div class="timeline-content">
+                            <h4>Amanhã 12h - Go Live</h4>
+                            <p>Sistema 100% operacional, equipe usando</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guarantee -->
+            <div class="guarantee-box">
+                <div class="guarantee-icon">🛡️</div>
+                <h3>Garantia Total de 90 Dias</h3>
+                <p>
+                    Se em 90 dias você não economizar tempo, não ter mais controle financeiro
+                    ou não impressionar seus clientes, cancelamos sem custo e devolvemos qualquer valor pago.
+                </p>
+            </div>
+
+            <!-- Social Proof -->
+            <div class="social-proof">
+                <p>
+                    "Implementamos sistema similar em 3 construtoras. Resultado médio:
+                    35% de aumento na produtividade e 22% de redução em desperdício de materiais
+                    nos primeiros 6 meses."
+                </p>
+                <div class="testimonial-author">
+                    — Equipe Ávila, 150+ projetos entregues
+                </div>
+            </div>
+
+            <!-- Badges -->
+            <div style="text-align: center; margin: 30px 0;">
+                <span class="badge">✅ Setup Gratuito</span>
+                <span class="badge">✅ Treinamento Incluído</span>
+                <span class="badge">✅ Suporte 30 Dias</span>
+                <span class="badge">✅ Atualizações Grátis</span>
+            </div>
+
+            <!-- CTA -->
+            <a href="https://wa.me/5517991642412?text=Quero%20conhecer%20o%20sistema%20Marcos%20Constru%C3%A7%C3%A3o!"
+                class="cta-button">
+                📱 QUERO COMEÇAR HOJE - FALAR NO WHATSAPP
+            </a>
+
+            <p style="text-align: center; color: #64748b; font-size: 14px; margin-top: 20px;">
+                Ou responda este email para agendar demonstração ao vivo
+            </p>
+
+            <!-- What's Included -->
+            <div class="section">
+                <h2>📦 Tudo que está incluído</h2>
+                <ul style="color: #475569; line-height: 2;">
+                    <li>✅ Backend API REST (ASP.NET Core 9)</li>
+                    <li>✅ Frontend Dashboard (Next.js 15)</li>
+                    <li>✅ Banco de dados configurado</li>
+                    <li>✅ Aplicativo mobile PWA</li>
+                    <li>✅ Integração WhatsApp Business</li>
+                    <li>✅ Gerador de orçamentos PDF</li>
+                    <li>✅ Sistema de alertas automáticos</li>
+                    <li>✅ Backup diário automático</li>
+                    <li>✅ SSL e segurança completa</li>
+                    <li>✅ Hospedagem otimizada</li>
+                </ul>
+            </div>
+
+            <!-- FAQ Quick -->
+            <div class="section">
+                <h2>❓ Perguntas Frequentes</h2>
+
+                <div style="margin: 20px 0;">
+                    <strong style="color: #ea580c;">Precisa de internet?</strong><br>
+                    <span style="color: #64748b;">Não! O app funciona offline e sincroniza quando conectar.</span>
+                </div>
+
+                <div style="margin: 20px 0;">
+                    <strong style="color: #ea580c;">Minha equipe vai saber usar?</strong><br>
+                    <span style="color: #64748b;">Sim! Interface simples + 2h de treinamento. Se usa WhatsApp, usa o
+                        sistema.</span>
+                </div>
+
+                <div style="margin: 20px 0;">
+                    <strong style="color: #ea580c;">E se eu não gostar?</strong><br>
+                    <span style="color: #64748b;">Cancela quando quiser. Primeiros 3 meses grátis = zero risco.</span>
+                </div>
+
+                <div style="margin: 20px 0;">
+                    <strong style="color: #ea580c;">Meus dados ficam seguros?</strong><br>
+                    <span style="color: #64748b;">Sim! Backup diário, criptografia, servidores seguros. Seus dados são
+                        SEUS.</span>
+                </div>
+            </div>
+
+            <!-- Final CTA -->
+            <div
+                style="background-color: #fff7ed; padding: 30px; border-radius: 10px; text-align: center; margin: 30px 0;">
+                <h3 style="color: #ea580c; margin-bottom: 15px;">
+                    🎯 Pronto para profissionalizar sua construção?
+                </h3>
+                <p style="margin-bottom: 20px;">
+                    Clique no botão abaixo e vamos configurar tudo hoje mesmo!
+                </p>
+                <a href="https://wa.me/5517991642412?text=Ol%C3%A1!%20Vi%20a%20proposta%20do%20sistema%20e%20quero%20mais%20informa%C3%A7%C3%B5es"
+                    class="cta-button">
+                    💬 FALAR COM CONSULTOR AGORA
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-logo">Ávila</div>
+            <div class="footer-contact">
+                📧 Email: <a href="mailto:propostas@avila.ops">propostas@avila.ops</a><br>
+                📱 WhatsApp: <a href="https://wa.me/5517991642412">(17) 99164-2412</a><br>
+                🌐 Web: <a href="https://avila.ops">avila.ops</a>
+            </div>
+            <div class="footer-disclaimer">
+                Este email foi enviado para Marcos Construção - São José do Rio Preto, SP.<br>
+                Oferta válida até 20/11/2025. Valores sujeitos a alteração.<br>
+                © 2025 Ávila. Todos os direitos reservados.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

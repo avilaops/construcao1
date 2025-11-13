@@ -1,0 +1,26 @@
+{
+  "name": "Marcos Construção",
+  "short_name": "Marcos",
+  "description": "Sistema de Gestão de Obras - Experiência no que faz",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e293b",
+  "theme_color": "#ea580c",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["business", "productivity", "construction"],
+  "lang": "pt-BR",
+  "dir": "ltr"
+}

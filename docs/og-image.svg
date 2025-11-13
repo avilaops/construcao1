@@ -1,0 +1,65 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="ogBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ea580c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+
+  <!-- Accent bar -->
+  <rect width="1200" height="8" y="0" fill="url(#accentGrad)"/>
+  <rect width="1200" height="8" y="622" fill="url(#accentGrad)"/>
+
+  <!-- Building icon -->
+  <g transform="translate(150, 315)">
+    <!-- Building -->
+    <rect x="-60" y="-80" width="120" height="160" fill="#334155" stroke="#64748b" stroke-width="4"/>
+    <path d="M -75,-80 L 0,-140 L 75,-80 Z" fill="#ea580c"/>
+
+    <!-- Windows -->
+    <rect x="-45" y="-50" width="25" height="25" fill="#3b82f6" opacity="0.6"/>
+    <rect x="-10" y="-50" width="25" height="25" fill="#3b82f6" opacity="0.6"/>
+    <rect x="20" y="-50" width="25" height="25" fill="#3b82f6" opacity="0.6"/>
+    <rect x="-45" y="-10" width="25" height="25" fill="#3b82f6" opacity="0.6"/>
+    <rect x="-10" y="-10" width="25" height="25" fill="#3b82f6" opacity="0.6"/>
+    <rect x="20" y="-10" width="25" height="25" fill="#3b82f6" opacity="0.6"/>
+
+    <!-- Door -->
+    <rect x="-20" y="35" width="40" height="45" fill="#1e293b" rx="3"/>
+  </g>
+
+  <!-- Main text -->
+  <text x="300" y="260" font-family="Arial Black, sans-serif" font-size="72" font-weight="900" fill="#ffffff">
+    MARCOS CONSTRUÇÃO
+  </text>
+
+  <!-- Subtitle -->
+  <text x="300" y="330" font-family="Arial, sans-serif" font-size="36" font-weight="400" fill="#94a3b8">
+    Sistema de Gestão de Obras
+  </text>
+
+  <!-- Features -->
+  <g transform="translate(300, 380)">
+    <text y="0" font-family="Arial, sans-serif" font-size="24" fill="#cbd5e1">
+      ✓ Dashboard em tempo real
+    </text>
+    <text y="40" font-family="Arial, sans-serif" font-size="24" fill="#cbd5e1">
+      ✓ Controle financeiro automático
+    </text>
+    <text y="80" font-family="Arial, sans-serif" font-size="24" fill="#cbd5e1">
+      ✓ Gestão de equipe e materiais
+    </text>
+  </g>
+
+  <!-- Logo bottom right -->
+  <text x="1050" y="590" font-family="Arial, sans-serif" font-size="28" font-weight="600" fill="#ea580c">
+    Ávila
+  </text>
+</svg>

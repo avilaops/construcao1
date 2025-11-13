@@ -1,0 +1,41 @@
+{
+  "cliente": {
+    "razaoSocial": "MARCOS CONSTRUÇÃO",
+    "nomeFantasia": "Marcos Construção",
+    "cnpj": "PENDENTE",
+    "contato": {
+      "telefone": "17 99164-2412",
+      "whatsapp": "17 99164-2412",
+      "email": "PENDENTE - solicitar no WhatsApp"
+    },
+    "endereco": {
+      "logradouro": "Rua Leonor de Lima Neto",
+      "numero": "555",
+      "bairro": "Vila Madalena",
+      "cidade": "São José do Rio Preto",
+      "estado": "SP",
+      "cep": "PENDENTE"
+    },
+    "servicos": {
+      "especialidade": "Mão-de-obra especializada",
+      "slogan": "Experiência no que faz",
+      "tagline": "Sua obra do início ao acabamento",
+      "qualidade": "Serviços com qualidade"
+    },
+    "status": "LEAD_ATIVO",
+    "origem": "CARTAO_VISITA",
+    "dataContato": "2025-11-13",
+    "observacoes": [
+      "Acabaram de conseguir uma obra de 350m²",
+      "Empresa jovem em crescimento",
+      "Foco em qualidade e experiência",
+      "Precisa de sistema de gestão de obras"
+    ],
+    "proximasAcoes": [
+      "✅ Enviar mensagem no WhatsApp se apresentando",
+      "⏳ Solicitar email para envio de apresentação",
+      "⏳ Solicitar CNPJ para completar cadastro",
+      "⏳ Agendar demonstração do sistema"
+    ]
+  }
+}
